@@ -2,6 +2,7 @@ extends Node2D
 
 var size
 var grid = []
+var remaining
 
 const cell_state = Constants.CellState
 var turn = cell_state.X
@@ -15,6 +16,7 @@ func init_grid(size: int) -> void:
 
 func init(size: int) -> void:
 	self.size = size
+	self.remaining = size * size
 	init_grid(size)
 	
 	
@@ -28,8 +30,11 @@ func press_event(cell: Cell) -> void:
 	
 	if turn == cell_state.X: turn = cell_state.O
 	else: turn = cell_state.X
-	
+	remaining -= 1
 	check_if_win(y, x)
+	if remaining == 0 and not GameManager.is_game_over: 
+		GameManager.game_over.emit(cell_state.EMPTY)
+	
 	
 	
 func check_if_win(y: int, x: int) -> void:
@@ -72,5 +77,5 @@ func check_if_win(y: int, x: int) -> void:
 		if valid and pieces == size:
 			GameManager.game_over.emit(target_piece)
 			break
-			
+	
 	

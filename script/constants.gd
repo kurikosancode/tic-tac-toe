@@ -8,5 +8,8 @@ const circle_path = "res://assets/circle.png"
 const cross_path = "res://assets/cross.png"
 
 const CELL_SIZE = 100
-const CELLS = 5
+const CELLS = 3
 const PADDING = 10
+
+const MENU_PATH = "res://scene/main_menu.tscn"
+const GAME_PATH = "res://scene/tic_tac_toe.tscn"

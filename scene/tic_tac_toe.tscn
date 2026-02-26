@@ -4,6 +4,30 @@
 [ext_resource type="PackedScene" uid="uid://cgpmcpa5p4t2h" path="res://global/GridManager.tscn" id="2_r3y54"]
 [ext_resource type="Script" uid="uid://bmf5h1xwmbxgr" path="res://script/board.gd" id="3_cc6up"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cc6up"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.93032813, 0.6053126, 0, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lq3o6"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.6139069, 0.3927364, 0, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
 [node name="TicTacToe" type="Node2D" unique_id=1997590801]
 script = ExtResource("1_r3y54")
 
@@ -17,14 +41,6 @@ script = ExtResource("3_cc6up")
 layer = 10
 follow_viewport_enabled = true
 
-[node name="Label" type="Label" parent="CanvasLayer" unique_id=68331185]
-offset_left = 145.0
-offset_top = 248.0
-offset_right = 444.0
-offset_bottom = 317.0
-theme_override_font_sizes/font_size = 50
-text = "Wassap nigg"
-
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=315868178]
 anchors_preset = 15
 anchor_right = 1.0
@@ -34,3 +50,33 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 0.24705882)
 metadata/_edit_use_anchors_ = true
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=1746426852]
+offset_left = 132.0
+offset_top = 373.0
+offset_right = 172.0
+offset_bottom = 413.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CenterContainer" unique_id=853507595]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/CenterContainer/VBoxContainer" unique_id=68331185]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Wassap nigg"
+
+[node name="Button" type="Button" parent="CanvasLayer/CenterContainer/VBoxContainer" unique_id=519819015]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_cc6up")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lq3o6")
+text = "Restart"
+
+[node name="Button2" type="Button" parent="CanvasLayer/CenterContainer/VBoxContainer" unique_id=159801609]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_cc6up")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lq3o6")
+text = "Main Menu"
+
+[connection signal="pressed" from="CanvasLayer/CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
