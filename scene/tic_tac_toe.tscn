@@ -34,7 +34,7 @@ script = ExtResource("1_r3y54")
 [node name="GridManager" parent="." unique_id=1750668200 instance=ExtResource("2_r3y54")]
 
 [node name="Board" type="Node2D" parent="." unique_id=2076498549]
-position = Vector2(503, 101)
+position = Vector2(562, 149)
 script = ExtResource("3_cc6up")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=214533414]
@@ -52,10 +52,10 @@ color = Color(0, 0, 0, 0.24705882)
 metadata/_edit_use_anchors_ = true
 
 [node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=1746426852]
-offset_left = 132.0
-offset_top = 373.0
-offset_right = 172.0
-offset_bottom = 413.0
+offset_left = 104.0
+offset_top = 261.0
+offset_right = 403.0
+offset_bottom = 400.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CenterContainer" unique_id=853507595]
 layout_mode = 2
@@ -80,3 +80,4 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_lq3o6")
 text = "Main Menu"
 
 [connection signal="pressed" from="CanvasLayer/CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/CenterContainer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

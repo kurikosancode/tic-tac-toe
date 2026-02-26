@@ -1,5 +1,35 @@
 [gd_scene format=3 uid="uid://bhtxyplrmr5sq"]
 
+[ext_resource type="Script" uid="uid://oql1g3ot7211" path="res://script/main_menu.gd" id="1_3er1b"]
+
 [node name="MainMenu" type="Control" unique_id=519075577]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_3er1b")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=386299038]
+layout_mode = 0
+offset_right = 1161.0
+offset_bottom = 672.0
+
+[node name="Label" type="Label" parent="." unique_id=63009770]
+layout_mode = 0
+offset_left = 281.0
+offset_top = 30.0
+offset_right = 835.0
+offset_bottom = 193.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "Tic Tac Toe"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=125022325]
+layout_mode = 0
+offset_left = 341.0
+offset_top = 321.0
+offset_right = 765.0
+offset_bottom = 373.0
+text = "Play"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

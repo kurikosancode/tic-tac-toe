@@ -36,3 +36,8 @@ func restart_game():
 	
 func _on_button_pressed() -> void:
 	restart_game()
+
+
+func _on_button_2_pressed() -> void:
+	SceneManager.go_to_menu()
+	GameManager.is_game_over = false
