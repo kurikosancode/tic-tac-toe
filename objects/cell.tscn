@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c13qa5hxjk26f"]
+
+[ext_resource type="Script" uid="uid://bv8gxm5uj2die" path="res://script/cell.gd" id="1_t3ne5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nhohd"]
+
+[node name="Cell" type="Area2D" unique_id=982590033]
+script = ExtResource("1_t3ne5")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=450785775]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1991906778]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=215108278]
+shape = SubResource("RectangleShape2D_nhohd")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

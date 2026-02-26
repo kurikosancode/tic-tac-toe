@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c05qqbx0muo4c"]
+
+[ext_resource type="PackedScene" uid="uid://g2o0fpff1tp4" path="res://scene/tic_tac_toe.tscn" id="1_itxqv"]
+
+[node name="Main" type="Node2D" unique_id=723303476]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1011742407]
+layer = 10
+follow_viewport_enabled = true
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=441957073]
+offset_left = 145.0
+offset_top = 248.0
+offset_right = 444.0
+offset_bottom = 317.0
+theme_override_font_sizes/font_size = 50
+text = "Wassap nigg"
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=827565913]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.24705882)
+metadata/_edit_use_anchors_ = true
+
+[node name="TicTacToe" parent="." unique_id=1997590801 instance=ExtResource("1_itxqv")]
+position = Vector2(579, 143)
