@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://obg4tsqbe2jg"
+path="res://.godot/imported/Wano Theme.mp3-2d3028270d1f8caa72c9fe7b0717b48e.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Wano Theme.mp3"
+dest_files=["res://.godot/imported/Wano Theme.mp3-2d3028270d1f8caa72c9fe7b0717b48e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

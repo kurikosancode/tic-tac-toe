@@ -13,3 +13,6 @@ const PADDING = 10
 
 const MENU_PATH = "res://scene/main_menu.tscn"
 const GAME_PATH = "res://scene/tic_tac_toe.tscn"
+
+const MUSIC_PATH = "res://assets/music"
+const MP3_EXTENSION = ".mp3"

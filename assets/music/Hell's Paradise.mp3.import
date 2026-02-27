@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://r2myj1ot0sa3"
+path="res://.godot/imported/Hell's Paradise.mp3-da5249ddfa8335c6ef592b38af67ba31.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Hell's Paradise.mp3"
+dest_files=["res://.godot/imported/Hell's Paradise.mp3-da5249ddfa8335c6ef592b38af67ba31.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

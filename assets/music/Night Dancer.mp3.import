@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2eardrqrdj3o"
+path="res://.godot/imported/Night Dancer.mp3-e33a5acc1a5f37b820e8c75215480794.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Night Dancer.mp3"
+dest_files=["res://.godot/imported/Night Dancer.mp3-e33a5acc1a5f37b820e8c75215480794.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

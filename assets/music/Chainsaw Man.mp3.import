@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c11hl2aekfwmd"
+path="res://.godot/imported/Chainsaw Man.mp3-8371ae5f2d0e5ed24e18047fac8b6afb.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Chainsaw Man.mp3"
+dest_files=["res://.godot/imported/Chainsaw Man.mp3-8371ae5f2d0e5ed24e18047fac8b6afb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

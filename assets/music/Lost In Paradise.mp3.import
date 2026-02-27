@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d0phd5kuy3lky"
+path="res://.godot/imported/Lost In Paradise.mp3-2a2161db62c4cb10ee62e6d079796e81.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Lost In Paradise.mp3"
+dest_files=["res://.godot/imported/Lost In Paradise.mp3-2a2161db62c4cb10ee62e6d079796e81.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

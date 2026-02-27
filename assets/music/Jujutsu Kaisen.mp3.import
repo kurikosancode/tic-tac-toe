@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bbdcaihujwwqw"
+path="res://.godot/imported/Jujutsu Kaisen.mp3-65139011018656d42de4bb4f769d21fb.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Jujutsu Kaisen.mp3"
+dest_files=["res://.godot/imported/Jujutsu Kaisen.mp3-65139011018656d42de4bb4f769d21fb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
